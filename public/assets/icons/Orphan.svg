@@ -1,11 +1,8 @@
-function SvgOrphan(props) {
-  return (
-    <svg
+<svg
       xmlns="http://www.w3.org/2000/svg"
       width="30.449"
       height="28.928"
       viewBox="0 0 30.449 28.928"
-      {...props}
     >
       <g id="Group_6911" data-name="Group 6911" transform="translate(0)">
         <g id="sister-and-brother" transform="translate(0 0)">
@@ -36,7 +33,3 @@ function SvgOrphan(props) {
         </g>
       </g>
     </svg>
-  );
-}
-
-export default SvgOrphan;

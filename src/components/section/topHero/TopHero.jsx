@@ -1,4 +1,4 @@
-import SignupForm from "@/components/elements/HeroForm/HeroForm";
+import SignupForm from "@/components/elements/forms/HeroForm/HeroForm";
 import React from "react";
 
 const TopHero = () => {
