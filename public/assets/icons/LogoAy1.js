@@ -2,7 +2,7 @@ function SvgAlteryouthLogo(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1em"
+      width="10em"
       height="1em"
       viewBox="0 0 42.49 9"
       {...props}
@@ -35,7 +35,7 @@ function SvgAlteryouthLogo(props) {
         <text
           transform="translate(10.489 7)"
           fill={props.color || "#fff"}
-          fontSize={6.5}
+          fontSize={65}
           fontFamily="Gilroy"
           fontWeight={700}
           letterSpacing="-.04em"
