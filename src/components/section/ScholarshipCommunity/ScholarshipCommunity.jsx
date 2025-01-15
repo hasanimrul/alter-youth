@@ -5,7 +5,7 @@ const ScholarshipCommunity = () => {
     <div className="main-container py-10">
       <div className="boxed-content">
         <div className="flex flex-col items-center gap-3">
-          <h3 className="text-emerald-500 text-2xl">#alteryouthrevolution</h3>
+          <h3 className="text-[#1dc468] text-2xl">#alteryouthrevolution</h3>
           <h2 className="text-4xl font-bold text-center">
             The Scholarship Community
           </h2>

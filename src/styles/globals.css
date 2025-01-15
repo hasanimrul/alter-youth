@@ -52,3 +52,10 @@ body {
 .boxed-content {
   width: min(1600px, 80vw);
 }
+
+
+
+::selection {
+  background-color: #1dc468; /* Change to your desired background color */
+  color: #ffffff; /* Change to your desired text color */
+}

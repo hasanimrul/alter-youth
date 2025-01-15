@@ -48,7 +48,7 @@ const NavBar = () => {
         </div>
         <ul
           className={`flex items-center gap-5 font-bold ${
-            scrolled ? "text-emerald-500" : "text-white"
+            scrolled ? "text-[#1dc468]" : "text-white"
           }`}
         >
           <li>

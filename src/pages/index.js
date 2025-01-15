@@ -6,6 +6,10 @@ import UberScholarship from "@/components/section/UberScholarship/UberScholarshi
 import ScholarshipCommunity from "@/components/section/ScholarshipCommunity/ScholarshipCommunity";
 import ScholarshipEligibility from "@/components/section/ScholarshipEligibility/ScholarshipEligibility";
 import ScholarshipPortfolio from "@/components/section/ScholarshipPortfolio/ScholarshipPortfolio";
+import ScholarshipApp from "@/components/section/ScholarshipApp/ScholarshipApp";
+import Association from "@/components/section/Association/Association";
+import CommunityImpact from "@/components/section/CommunityImpact/CommunityImpact";
+import GovtPrimarySchools from "@/components/section/GovtPrimarySchools/GovtPrimarySchools";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,8 +27,12 @@ export default function Home() {
       <TopHero />
       <UberScholarship />
       <ScholarshipCommunity />
+      <CommunityImpact />
+      <GovtPrimarySchools />
       <ScholarshipEligibility />
       <ScholarshipPortfolio />
+      <ScholarshipApp />
+      <Association />
     </Main>
   );
 }

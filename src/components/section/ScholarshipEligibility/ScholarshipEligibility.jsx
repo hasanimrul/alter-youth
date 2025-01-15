@@ -20,8 +20,8 @@ const ScholarshipEligibility = () => {
     },
   ];
   return (
-    <div className="main-container py-10">
-      <div className="boxed-content">
+    <div className="main-container py-10 ">
+      <div className="boxed-content px-10">
         <div className="flex flex-col items-center gap-3">
           <h2 className="text-4xl font-bold text-center">
             Scholarship Eligibility
@@ -34,7 +34,7 @@ const ScholarshipEligibility = () => {
             scholarships
           </p>
         </div>
-        <div className="flex items-center justify-between gap-3 py-10">
+        <div className="flex items-center justify-between gap-5 py-10">
           {eligibilityOptions.map((option, i) => (
             <EligibilityCard option={option} key={i}/>
           ))}
