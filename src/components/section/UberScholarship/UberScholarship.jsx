@@ -22,7 +22,7 @@ const UberScholarship = () => {
     <div className="lg:main-container  py-10 w-full">
       <div className="lg:boxed-content w-full">
         <div className="flex flex-col items-center gap-4">
-          <h2 className="text-4xl font-bold text-center ">
+          <h2 className="lg:text-4xl text-3xl font-bold text-center lg:max-w-full max-w-[10ch]">
             The Uber for Scholarships
           </h2>
           <p className="text-sm text-center hidden lg:block">
