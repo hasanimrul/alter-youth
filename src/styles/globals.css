@@ -50,7 +50,7 @@ body {
 }
 
 .boxed-content {
-  width: min(1600px, 80vw);
+  width: min(1280px, 95vw);
 }
 
 
@@ -58,4 +58,27 @@ body {
 ::selection {
   background-color: #1dc468; /* Change to your desired background color */
   color: #ffffff; /* Change to your desired text color */
+}
+
+/* Disable focus outline for PhoneInput */
+.PhoneInput {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px;
+}
+.PhoneInput:focus-within {
+  border-color: #1dc468;
+}
+
+.PhoneInputInput:focus{
+  outline: none;
+}
+
+.PhoneInputInput::placeholder {
+  color: #888 !important; 
+  content: "Your number" !important;
+}
+
+.sidebar-transition {
+  transition: left 0.8s ease, opacity 0.8s ease;
 }

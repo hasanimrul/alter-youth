@@ -26,7 +26,7 @@ export default function Home() {
     <Main>
       <TopHero />
       <UberScholarship />
-      <ScholarshipCommunity />
+      {/* <ScholarshipCommunity /> */}
       <CommunityImpact />
       <GovtPrimarySchools />
       <ScholarshipEligibility />

@@ -21,26 +21,26 @@ const ScholarshipApp = () => {
 
   
   return (
-    <div className="main-container py-10">
-      <div className="boxed-content grid grid-cols-2 items-center gap-20 px-10">
-        <div className="relative group overflow-hidden rounded-xl">
+    <div className="lg:main-container py-10">
+      <div className="lg:boxed-content grid lg:grid-cols-2 items-center gap-5 lg:gap-20 lg:px-10">
+      <h4 className="text-lg font-bold lg:hidden text-center">Embark on a scholarship journey</h4>
+        <div className="relative group overflow-hidden lg:rounded-xl">
           <div>
             <img
               src="/assets/images/ay_video_poster.jpg"
-              className="rounded-xl transition-transform duration-500 ease-out scale-100 group-hover:scale-105"
+              className="lg:rounded-xl transition-transform duration-500 ease-out scale-100 group-hover:scale-105"
             />
           </div>
 
           <button
             onClick={handleModalToggle}
-            className="bg-gray-700 max-w-max absolute top-[40%] left-[45%] px-6 py-7 opacity-80 rounded-full"
+            className="bg-gray-700 max-w-max absolute top-[40%] left-[40%] lg:top-[40%] lg:left-[45%] px-3 py-4 lg:px-6 lg:py-7 opacity-80 rounded-full"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="92.517"
               viewBox="0 0 92.517 97"
-              class="ms-2"
-              style={{ width: "30px" }}
+              class="ms-2 lg:w-[30px] w-[20px]"
             >
               <path
                 id="Polygon_3"
@@ -52,8 +52,9 @@ const ScholarshipApp = () => {
             </svg>
           </button>
         </div>
-        <div className="flex flex-col gap-5">
-          <h4 className="text-2xl font-bold">The scholarship app</h4>
+        <p className="text-sm leading-6 px-2 lg:hidden">Here's a 100 second video that takes you to a village of Bangladesh and shows how your scholarship impacts a day in the life of a student who needs it</p>
+        <div className="lg:flex flex-col gap-5 hidden">
+          <h4 className="text-2xl font-bold ">The scholarship app</h4>
           <p className="leading-7 ">
             In Bangladesh, while 98% of children enroll in school, 2 million
             children drop out to work before achieving literacy in order to
@@ -78,7 +79,7 @@ const ScholarshipApp = () => {
           >
             <div className="relative">
               <button
-                className="absolute top-3 right-3 bg-gray-100 text-black text-3xl rounded-full px-3  flex items-center justify-center"
+                className="absolute top-3 right-3 bg-gray-100 text-black text-3xl rounded-full px-3  flex items-center justify-center z-50"
                 onClick={handleModalToggle}
               >
                 &times;

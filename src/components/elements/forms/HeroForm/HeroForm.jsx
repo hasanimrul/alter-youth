@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
 
 const HeroForm = () => {
   const [scholarships, setScholarships] = useState(1);
+  const [value, setValue] = useState();
 
   const incrementScholarships = (e) => {
     e.preventDefault();
@@ -13,11 +16,10 @@ const HeroForm = () => {
     setScholarships((prev) => (prev > 1 ? prev - 1 : prev));
   };
   return (
-    <div className="rounded-lg w-[380px] bg-white p-5 shadow-lg">
+    <div className="rounded-lg w-[350px] lg:w-[360px] bg-white p-5 shadow-2xl">
       <div className="">
         <h2 className="text-xl font-semibold mb-6">
-          Join the{" "}
-          <span className="text-[#1dc468]">#alteryouthrevolution</span>
+          Join the <span className="text-[#1dc468]">#alteryouthrevolution</span>
         </h2>
 
         <form className="space-y-4">
@@ -33,26 +35,29 @@ const HeroForm = () => {
             className="w-full rounded-lg py-3 px-3 border  border-gray-300 focus:outline-none focus:border-[#1dc468]"
           />
 
-          <div className="flex gap-2 w-full rounded-lg py-3 px-3   border border-gray-300 focus:border-[#1dc468]">
-            <select className="">
-              <option>+88</option>
-            </select>
-            <input
-              type="tel"
-              placeholder="Your number"
-              className="focus:outline-none"
+          
+            <PhoneInput
+              countryCallingCodeEditable={false}
+              international
+              defaultCountry="BD"
+              value={value}
+              onChange={setValue}
+              inputProps={{
+                placeholder: "Your number", 
+              }}
             />
-          </div>
 
           <div className="space-y-2">
-            <label className="font-semibold text-black">
+            <label className="font-semibold text-sm text-black">
               Number of Scholarships
             </label>
-            <div className="flex items-center justify-between ">
+            <div className="flex items-end justify-between ">
               <div className="">
                 <button
                   type="button"
-                  className={`rounded-lg py-2 px-4 text-xl text-white ${scholarships === 1 ? "bg-gray-400" : "bg-[#1dc468]" }  `}
+                  className={`rounded-lg py-2 px-4 text-xl text-white ${
+                    scholarships === 1 ? "bg-gray-400" : "bg-[#1dc468]"
+                  }  `}
                   onClick={decrementScholarships}
                 >
                   -
@@ -62,14 +67,16 @@ const HeroForm = () => {
                 </span>
                 <button
                   type="button"
-                  className={`rounded-lg py-2 px-4 text-xl text-white ${scholarships === 3 ? "bg-gray-400" : "bg-[#1dc468]" }  `}
+                  className={`rounded-lg py-2 px-4 text-xl text-white ${
+                    scholarships === 3 ? "bg-gray-400" : "bg-[#1dc468]"
+                  }  `}
                   onClick={incrementScholarships}
                 >
                   +
                 </button>
               </div>
               <div className=" flex items-center">
-                <div className="text-xl font-semibold">
+                <div className="text-lg font-semibold">
                   BDT {(1650 * scholarships).toFixed(2)}
                 </div>
                 <div className="text-sm font-semibold">/month</div>

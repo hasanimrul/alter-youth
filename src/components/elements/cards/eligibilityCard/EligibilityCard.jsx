@@ -2,7 +2,7 @@ import React from "react";
 
 const EligibilityCard = ({ option }) => {
   return (
-    <div className="flex items-center gap-5 bg-white rounded-md shadow-custom p-6 max-w-max">
+    <div className="flex items-center gap-5 bg-white rounded-md shadow-custom py-3 px-3 lg:p-6 max-w-max">
       <img src={option.icon} />
       <div>
         <h4 className="text-lg font-bold">{option.title}</h4>

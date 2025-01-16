@@ -164,7 +164,7 @@ const GovtPrimarySchools = () => {
     <div className="w-full py-10">
       <div className="main-container">
         <div className="boxed-content">
-          <h4 className="text-4xl font-bold">
+          <h4 className="lg:text-4xl text-2xl font-bold">
             Students from Government Primary Schools Nationwide
           </h4>
         </div>

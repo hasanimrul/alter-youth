@@ -73,8 +73,8 @@ const CommunityImpact = () => {
     <div className="w-full">
       <div className="main-container">
         <div className="boxed-content">
-          <h4 className="text-4xl font-bold">Community Impact</h4>
-          <p className="text-sm leading-7 pt-4">
+          <h4 className="text-2xl lg:text-4xl font-bold">Community Impact</h4>
+          <p className="text-sm leading-7 pt-4 hidden lg:block">
             Every scholarship begins with shipping a mobile phone to the parent
             of the student. Then they create their own mobile bank account{" "}
             <br />
@@ -83,8 +83,8 @@ const CommunityImpact = () => {
           </p>
         </div>
       </div>
-      <div className="w-full py-10 relative">
-        <button className="absolute top-[45%] left-10 z-50" onClick={previous}>
+      <div className="w-full py-5 lg:py-10 relative">
+        <button className="absolute top-[45%] left-10 z-50 hidden lg:block" onClick={previous}>
           <svg
             width="40px"
             height="40px"
@@ -130,7 +130,7 @@ const CommunityImpact = () => {
             <img src={img} key={i} />
           ))}
         </Slider>
-        <button className={` absolute top-[45%] right-14 z-50`} onClick={next}>
+        <button className={` absolute top-[45%] right-14 z-50 hidden lg:block`} onClick={next}>
           <svg
             width="40px"
             height="40px"
@@ -167,6 +167,12 @@ const CommunityImpact = () => {
           </svg>
         </button>
       </div>
+      <p className="text-sm leading-7 lg:hidden px-5">
+            Every scholarship begins with shipping a mobile phone to the parent
+            of the student. Then they create their own mobile bank account{" "}
+            using that phone, to start receiving their child's scholarships
+            directly, every month.
+          </p>
     </div>
   );
 };

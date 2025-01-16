@@ -21,12 +21,12 @@ const ScholarshipEligibility = () => {
   ];
   return (
     <div className="main-container py-10 ">
-      <div className="boxed-content px-10">
-        <div className="flex flex-col items-center gap-3">
-          <h2 className="text-4xl font-bold text-center">
+      <div className="boxed-content lg:px-10">
+        <div className="flex flex-col lg:items-center gap-3">
+          <h2 className="lg:text-4xl text-xl font-bold text-left lg:text-center">
             Scholarship Eligibility
           </h2>
-          <p className="text-sm text-center leading-6">
+          <p className="text-sm lg:text-center leading-6">
             Only students who are currently enrolled in Government Primary
             Schools and fall
             <br />
@@ -34,7 +34,7 @@ const ScholarshipEligibility = () => {
             scholarships
           </p>
         </div>
-        <div className="flex items-center justify-between gap-5 py-10">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-5 py-10">
           {eligibilityOptions.map((option, i) => (
             <EligibilityCard option={option} key={i}/>
           ))}

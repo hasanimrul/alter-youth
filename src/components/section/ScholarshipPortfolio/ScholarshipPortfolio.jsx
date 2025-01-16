@@ -24,7 +24,7 @@ const ScholarshipPortfolio = () => {
   ];
   return (
     <div className="main-container py-10 w-full">
-      <div className="boxed-content flex justify-between items-center gap-5 w-full px-10">
+      <div className="boxed-content flex flex-col lg:flex-row justify-between items-center gap-5 w-full lg:px-10">
         {cardInfo.map((info, i) => (
           <PortfolioCard info={info} i={i} key={i} />
         ))}
