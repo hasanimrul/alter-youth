@@ -21,14 +21,14 @@ const ScholarshipApp = () => {
 
   
   return (
-    <div className="lg:main-container py-10">
-      <div className="lg:boxed-content grid lg:grid-cols-2 items-center gap-5 lg:gap-20 lg:px-10">
+    <div className="main-container py-10">
+      <div className="boxed-content grid lg:grid-cols-2 items-center gap-5 lg:gap-20 lg:px-10">
       <h4 className="text-lg font-bold lg:hidden text-center">Embark on a scholarship journey</h4>
         <div className="relative group overflow-hidden lg:rounded-xl">
           <div>
             <img
               src="/assets/images/ay_video_poster.jpg"
-              className="lg:rounded-xl transition-transform duration-500 ease-out scale-100 group-hover:scale-105"
+              className="rounded-xl transition-transform duration-500 ease-out scale-100 group-hover:scale-105"
             />
           </div>
 
