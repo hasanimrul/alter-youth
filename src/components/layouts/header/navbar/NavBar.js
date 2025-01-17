@@ -21,11 +21,11 @@ const NavBar = ({ toggle, isOpen }) => {
   return (
     <header>
       <div
-        className={`main-container lg:fixed top-0 left-0 right-0 z-20 transition-all duration-300 hidden ${
+        className={`main-container lg:fixed md:fixed top-0 left-0 right-0 z-20 transition-all duration-300 hidden ${
           scrolled ? "bg-white shadow-lg" : "bg-transparent"
         }`}
       >
-        <nav className="boxed-content lg:flex items-center justify-between py-2 hidden">
+        <nav className="boxed-content lg:flex md:flex items-center justify-between py-2 hidden">
           <div className="flex items-center gap-5">
             <button onClick={toggle}>
               <img

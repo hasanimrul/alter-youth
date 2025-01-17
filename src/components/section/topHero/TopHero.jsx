@@ -5,15 +5,15 @@ const TopHero = () => {
   return (
     <>
       <div
-        className="main-container lg:h-[85vh] w-full hidden"
+        className="main-container md:h-lvh lg:h-lvh w-full hidden"
         style={{
           backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, hsla(0, 0%, 100%, 0) 25%, hsla(0, 0%, 100%, 0)), url(/assets/images/hero_pc.jpg)`,
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
       >
-        <div className="boxed-content  lg:flex flex-col justify-center h-full w-full hidden">
-          <div className="flex flex-col lg:flex-row items-center justify-between w-full px-20">
+        <div className="boxed-content  lg:flex md:flex flex-col justify-center h-full w-full hidden">
+          <div className="flex flex-col lg:flex-row  items-center justify-between w-full px-20">
             <div className="flex flex-col gap-5">
               <h1 className="text-white text-6xl font-bold">
                 Start your <br /> scholarship
